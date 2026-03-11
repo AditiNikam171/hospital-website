@@ -1,0 +1,51 @@
+/* index.css */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8fafc; /* Light gray */
+  color: #111;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #1d4ed8; /* blue hover */
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #111;
+}
+
+/* Utility classes (optional) */
+.text-center {
+  text-align: center;
+}
