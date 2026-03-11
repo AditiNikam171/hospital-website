@@ -1,6 +1,7 @@
 // Overview.jsx
 import { Bed, Users, Stethoscope, Clock, Shield } from "lucide-react";
 import "./Overview.css";
+import doctorsImg from "../assets/Hospital_04_.jpg";
 
 export function Overview() {
   const stats = [
@@ -63,10 +64,7 @@ export function Overview() {
             <p>Our multidisciplinary approach ensures that every patient receives personalized care.</p>
           </div>
           <div className="intro-image">
-            <img
-              src="https://images.unsplash.com/photo-1639729796979-855f31cf9473"
-              alt="Hospital interior"
-            />
+            <img src={doctorsImg} alt="Doctors team" />
           </div>
         </div>
       </section>
