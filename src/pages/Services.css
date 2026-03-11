@@ -1,0 +1,293 @@
+/* Services.css */
+
+/* Page Header */
+.services-hero {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("../assets/services/Instruments.jpg");
+
+  height: 300px;
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+.services-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color:white;
+}
+.services-hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Specialties Grid Section */
+.specialties-section {
+  padding: 60px 20px;
+  background-color: #f9fafb;
+}
+.specialties-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Specialty Card */
+.specialty-card {
+  width: 340px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.specialty-card:hover {
+  border-color: #1d4ed8;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Card Image */
+.specialty-img-wrap {
+  background-color: #f3f4f6;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.specialty-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Card Body */
+.specialty-body {
+  padding: 16px 20px 10px;
+  flex: 1;
+}
+.specialty-body h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #111827;
+}
+.specialty-body p {
+  font-size: 0.875rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Card Footer */
+.specialty-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-top: 1px solid #e5e7eb;
+}
+.specialty-doctors {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1d4ed8;
+  background-color: #dbeafe;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+.specialty-more {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1d4ed8;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* Modal Box */
+.modal {
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 700px;
+  max-height: 88vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* Modal Header */
+.modal-header {
+  padding: 28px 28px 24px;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  color: white;
+}
+.modal-header-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.modal-img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 8px;
+  flex-shrink: 0;
+}
+.modal-header-content h2 {
+  font-size: 1.6rem;
+  margin: 0 0 8px;
+}
+.modal-header-content p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  line-height: 1.6;
+  margin: 0 0 12px;
+}
+.modal-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.modal-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.modal-close:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 24px 28px 28px;
+}
+.modal-section {
+  margin-bottom: 24px;
+}
+.modal-section h4 {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Tags */
+.modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.modal-tag {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Procedure List */
+.modal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: #374151;
+  background-color: #f9fafb;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Modal CTA */
+.modal-cta {
+  display: flex;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+  flex-wrap: wrap;
+}
+.modal-cta .btn-primary {
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.modal-cta .btn-primary:hover {
+  background-color: #1e40af;
+}
+.modal-cta .btn-secondary {
+  background-color: white;
+  color: #1d4ed8;
+  border: 1px solid #1d4ed8;
+  padding: 10px 24px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.modal-cta .btn-secondary:hover {
+  background-color: #f0f0f0;
+}
